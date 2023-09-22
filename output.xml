@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230811 13:38:38.847" rpa="false" schemaversion="4">
+<suite id="s1" name="Exercício If Inline + For in Range" source="c:\Users\Notebook\Documents\Cursos\Prime Hero Academy\Desafio 2\Exercício If Inline + For in Range.robot">
+<test id="s1-t1" name="Count Even Numbers" line="5">
+<kw name="Set Variable" library="BuiltIn">
+<var>${count}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230811 13:38:38.905" level="INFO">${count} = 0</msg>
+<status status="PASS" starttime="20230811 13:38:38.905" endtime="20230811 13:38:38.913"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${number}</var>
+<value>0</value>
+<value>11</value>
+<iter>
+<var name="${number}">0</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.921" level="INFO">${is_even} = True</msg>
+<status status="PASS" starttime="20230811 13:38:38.921" endtime="20230811 13:38:38.921"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Set Variable" library="BuiltIn">
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" starttime="20230811 13:38:38.921" endtime="20230811 13:38:38.930"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.921" endtime="20230811 13:38:38.930"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.921" endtime="20230811 13:38:38.930"/>
+</iter>
+<iter>
+<var name="${number}">1</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.930" level="INFO">${is_even} = False</msg>
+<status status="PASS" starttime="20230811 13:38:38.930" endtime="20230811 13:38:38.930"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20230811 13:38:38.930" endtime="20230811 13:38:38.938"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.930" endtime="20230811 13:38:38.938"/>
+</iter>
+<iter>
+<var name="${number}">2</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.938" level="INFO">${is_even} = True</msg>
+<status status="PASS" starttime="20230811 13:38:38.938" endtime="20230811 13:38:38.938"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Set Variable" library="BuiltIn">
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" starttime="20230811 13:38:38.946" endtime="20230811 13:38:38.946"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.938" endtime="20230811 13:38:38.946"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.938" endtime="20230811 13:38:38.946"/>
+</iter>
+<iter>
+<var name="${number}">3</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.946" level="INFO">${is_even} = False</msg>
+<status status="PASS" starttime="20230811 13:38:38.946" endtime="20230811 13:38:38.946"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20230811 13:38:38.946" endtime="20230811 13:38:38.946"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.946" endtime="20230811 13:38:38.946"/>
+</iter>
+<iter>
+<var name="${number}">4</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.954" level="INFO">${is_even} = True</msg>
+<status status="PASS" starttime="20230811 13:38:38.946" endtime="20230811 13:38:38.954"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Set Variable" library="BuiltIn">
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" starttime="20230811 13:38:38.954" endtime="20230811 13:38:38.954"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.954" endtime="20230811 13:38:38.954"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.946" endtime="20230811 13:38:38.954"/>
+</iter>
+<iter>
+<var name="${number}">5</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.954" level="INFO">${is_even} = False</msg>
+<status status="PASS" starttime="20230811 13:38:38.954" endtime="20230811 13:38:38.962"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20230811 13:38:38.962" endtime="20230811 13:38:38.962"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.954" endtime="20230811 13:38:38.962"/>
+</iter>
+<iter>
+<var name="${number}">6</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.964" level="INFO">${is_even} = True</msg>
+<status status="PASS" starttime="20230811 13:38:38.964" endtime="20230811 13:38:38.964"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Set Variable" library="BuiltIn">
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" starttime="20230811 13:38:38.964" endtime="20230811 13:38:38.964"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.964" endtime="20230811 13:38:38.964"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.964" endtime="20230811 13:38:38.964"/>
+</iter>
+<iter>
+<var name="${number}">7</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.964" level="INFO">${is_even} = False</msg>
+<status status="PASS" starttime="20230811 13:38:38.964" endtime="20230811 13:38:38.964"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20230811 13:38:38.964" endtime="20230811 13:38:38.964"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.964" endtime="20230811 13:38:38.972"/>
+</iter>
+<iter>
+<var name="${number}">8</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.972" level="INFO">${is_even} = True</msg>
+<status status="PASS" starttime="20230811 13:38:38.972" endtime="20230811 13:38:38.972"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Set Variable" library="BuiltIn">
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" starttime="20230811 13:38:38.980" endtime="20230811 13:38:38.980"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.972" endtime="20230811 13:38:38.980"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.972" endtime="20230811 13:38:38.980"/>
+</iter>
+<iter>
+<var name="${number}">9</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.980" level="INFO">${is_even} = False</msg>
+<status status="PASS" starttime="20230811 13:38:38.980" endtime="20230811 13:38:38.988"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20230811 13:38:38.988" endtime="20230811 13:38:38.988"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.980" endtime="20230811 13:38:38.988"/>
+</iter>
+<iter>
+<var name="${number}">10</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_even}</var>
+<arg>${number} % 2 == 0</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230811 13:38:38.988" level="INFO">${is_even} = True</msg>
+<status status="PASS" starttime="20230811 13:38:38.988" endtime="20230811 13:38:38.988"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${is_even}</arg>
+<arg>Set Variable</arg>
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Set Variable" library="BuiltIn">
+<arg>${count}</arg>
+<arg>${count} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" starttime="20230811 13:38:38.988" endtime="20230811 13:38:38.988"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.988" endtime="20230811 13:38:38.988"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.988" endtime="20230811 13:38:38.988"/>
+</iter>
+<status status="PASS" starttime="20230811 13:38:38.921" endtime="20230811 13:38:38.988"/>
+</for>
+<kw name="Log" library="BuiltIn">
+<arg>Number of even numbers: ${count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230811 13:38:38.988" level="INFO">Number of even numbers: 0</msg>
+<status status="PASS" starttime="20230811 13:38:38.988" endtime="20230811 13:38:38.996"/>
+</kw>
+<status status="PASS" starttime="20230811 13:38:38.905" endtime="20230811 13:38:38.996"/>
+</test>
+<status status="PASS" starttime="20230811 13:38:38.855" endtime="20230811 13:38:39.004"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercício If Inline + For in Range">Exercício If Inline + For in Range</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
